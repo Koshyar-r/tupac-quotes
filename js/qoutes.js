@@ -53,7 +53,7 @@ let Qoutes = [
     },
     {
         numb: 14,
-        qoute: "Don't believe everything you see. Real eyes, Realize, Real lies."
+        qoute: "Don't believe everything you hear. Real eyes, Realize, Real lies."
     },
     {
         numb: 15,
