@@ -68,7 +68,7 @@ body {
     color: #FFF;
 }
 .container .buttons {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #FFF;
     margin: 20px 0;
 }
 .buttons .features {
@@ -89,14 +89,17 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #ffffff;
+    background: #2b0db1;
+    color: #FFF;
     list-style: none;
     border-radius: 50%;
-    border: 2px solid #ffffff;
-    transition: all 0.3s ease;
+    border: 2px solid #FFF;
+    transition: all .3s ease;
 }
 .features ul li:hover {
-    background: #2b0db1;
+    background: #FFF;
+    color: #2b0db1;
+    border: 2px solid #2b0db1;
 }
 .features ul li:first-child {
     margin-left: 0;
@@ -109,4 +112,21 @@ body {
     border-radius: 5px;
     background: #2b0db1;
     color: #FFF;
+    transition: all .5s ease;
+}
+.quote__buttons .prev__button {
+    background: #FFF;
+    color: #2b0db1;
+}
+.quote__buttons .prev__button:hover {
+    background: #2b0db1;
+    color: #FFF;
+}
+.quote__buttons .next__button {
+    background: #2b0db1;
+    color: #FFF;
+}
+.quote__buttons .next__button:hover {
+    background: #FFF;
+    color: #2b0db1;
 }
