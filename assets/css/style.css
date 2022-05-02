@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 :root {
     --body-font: 'Poppins', sans-serif;
-    --qoute-font: 'Sansita Swashed', cursive;
-    --container-color: #323232;
-    --qoute-color: #F7F5F2;
+    --quote-font: 'Kalam', cursive;
+    --quote-author-font: 'Alex Brush', cursive; 
 }
 * {
     margin: 0;
@@ -12,9 +12,101 @@
     box-sizing: border-box;
     font-family: var(--body-font);
 }
+::selection {
+    background: #2b0db1;
+    color: #FFF;
+}
+html {
+    height: 100%;
+}
 body {
+    background-image: url(/assets/images/pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background: none;
+    width: 550px;
+    padding: 30px 30px 25px;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 27%;
     transform: translate(-50%, -50%);
+}
+.container header {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.container .content {
+    margin: 35px 0;
+}
+.content .quote__content {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+.quote__content .quote {
+    font-size: 1.8rem;
+    line-height: 40px;
+    text-align: center;
+    user-select: all;
+    font-family: var(--quote-font);
+}
+.content .author {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+.author a:first-child {
+    margin: 11px 5px 0 0;
+    text-decoration: none;
+    font-family: var(--quote-author-font);
+    color: #FFF;
+}
+.container .buttons {
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+}
+.buttons .features {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.features ul {
+    display: flex;
+}
+.features ul li {
+    font-size: 20px;
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    list-style: none;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+.features ul li:hover {
+    background: #2b0db1;
+}
+.features ul li:first-child {
+    margin-left: 0;
+}
+.buttons button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 5px;
+    background: #2b0db1;
+    color: #FFF;
 }
