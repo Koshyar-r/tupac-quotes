@@ -5,15 +5,13 @@ const PreviousButton = QuoteButtons.querySelector(".prev__button")
 const CopyButton = document.querySelector(".copy")
 const ShareButton = document.querySelector(".twitter")
 
-let QuoteCount = 0
-let QuoteNumb = 1
 
-NextButton.onclick = () => {
-    ShowQuotes(QuoteCount)
-}
+let QuoteCount = 0
+
+NextButton.addEventListener("click", ShowQuotes())
 
 function ShowQuotes(index) {
-    let QuoteTag = '<span>'+ Quotes[index].numb + ". " + Quotes[index].quote +'</span>'
+    let QuoteTag = '<span>' + Quotes[index].quote + '</span>'
     QuoteText.innerHTML = QuoteTag
 }
 
