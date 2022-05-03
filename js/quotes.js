@@ -98,5 +98,141 @@ let Quotes = [
     {
         numb: 25,
         quote: "Everything will be alright if you hold on. It's a struggle every day, gotta roll on."
+    },
+    {
+        numb: 26,
+        quote: "Happy are those who dream dreams and are ready to pay the price to make them come true."
+    },
+    {
+        numb: 27,
+        quote: "I'm not perfect. But I'll always be real."
+    },
+    {
+        numb: 28,
+        quote: "I don't want it if it's that easy."
+    },
+    {
+        numb: 29,
+        quote: "Only God can judge me."
+    },
+    {
+        numb: 30,
+        quote: "I am a hard person to love but when I love, I love really hard."
+    },
+    {
+        numb: 31,
+        quote: "Ain't a woman alive that could take my mama's place."
+    },
+    {
+        numb: 32,
+        quote: "Look to my future, 'cause my past is all behind me."
+    },
+    {
+        numb: 33,
+        quote: "You gotta make a change. Its time for us as a people to start making some changes, let's change the way we eat, let's change the way we live, and let's change the way we treat each other. You see the old way wasn't working so it's on us, to do what we gotta do to survive."
+    },
+    {
+        numb: 34,
+        quote: "The seed must grow regardless of the fact that it's planted in stone."
+    },
+    {
+        numb: 35,
+        quote: "Behind every sweet smile, there is a bitter sadness that no one can see and feel."
+    },
+    {
+        numb: 36,
+        quote: "Fear is stronger than love."
+    },
+    {
+        numb: 37,
+        quote: "Whatever you see you gotta keep a sense of humor; you gotta be able to smile through all the bullshit."
+    },
+    {
+        numb: 38,
+        quote: "The only thing that comes to a sleeping man is dreams."
+    },
+    {
+        numb: 39,
+        quote: "It takes skill to be real. Time to heal each other."
+    },
+    {
+        numb: 40,
+        quote: "Don't change on me. Don't extort me unless you intend to do it forever."
+    },
+    {
+        numb: 42,
+        quote: "When you do rap albums, you got to train yourself. You got to constantly be in character."
+    },
+    {
+        numb: 43,
+        quote: "We was young and we was dumb, but we had heart."
+    },
+    {
+        numb: 44,
+        quote: "This fast life soon shatters, cause after all the lights and screams, nothing but my dreams matter."
+    },
+    {
+        numb: 45,
+        quote: "Just cause you live in the ghetto doesn't mean you can't grow."
+    },
+    {
+        numb: 46,
+        quote: "You know nothing can stop me but loss of breath and I'm still breathing so it's still on."
+    },
+    {
+        numb: 47,
+        quote: "I don't want to be a role model. I just want to be someone who says, this is who I am, this is what I do, I say what's on my mind."
+    },
+    {
+        numb: 48,
+        quote: "I am a society's child. This is how they made me and now I'm sayin' what's on my mind and they don't want that. This is what you made me, America."
+    },
+    {
+        numb: 49,
+        quote: "There's gonna be some stuff you gonna see that's gonna make it hard to smile in the future, but through whatever you see, through all the rain and the pain you gotta keep your sense of humor. You gotta be able to smile through all this bullshit…remember that."
+    },
+    {
+        numb: 50,
+        quote: "I set goals, take control, drink out my own bottle. I make mistakes but learn from every one. And when it's said and done. I bet this brother be a better one. If I upset you don't stress. Never forget, that God isn't finished with me yet."
+    },
+    {
+        numb: 51,
+        quote: "I mean why have 52 rooms and you know there's somebody with no room? It just don't make sense to me."
+    },
+    {
+        numb: 52,
+        quote: "Everybody against me. Why? Why me? I have not brought violence to you. I have not brought Thug Life to America. I didn't create Thug Life. I diagnosed it."
+    },
+    {
+        numb: 53,
+        quote: "Why can't [the President] take some of those people off the street and put them in his White House? Then he'll have people from the street to help him with his ideas. They haven't been homeless forever; they've done things for society."
+    },
+    {
+        numb: 54,
+        quote: "Every time I speak I want the truth to come out. Every time I speak I want a shiver. I don't want them to be like they know what I'm gonna say because it's polite. I'm not saying I'm gonna rule the world or I'm gonna change the world, but I guarantee you that I will spark the brain that will change the world."
+    },
+    {
+        numb: 55,
+        quote: "Follow your heart, but take your brain with you."
+    },
+    {
+        numb: 56,
+        quote: "I got a big mouth, I can't help it. I talk from my heart, I'm real."
+    },
+    {
+        numb: 57,
+        quote: "If you grew up happy, too happy […] I don't think that prepares you for the world."
+    },
+    {
+        numb: 58,
+        quote: "Trust nobody."
+    },
+    {
+        numb: 59,
+        quote: "Time to heal our women, be real to our women."
+    },
+    {
+        numb: 60,
+        quote: "Learn to see me as a brother instead of two distant strangers."
     }
 ]

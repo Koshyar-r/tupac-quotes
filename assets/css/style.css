@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--body-font);
 }
 ::selection {
     background: #2b0db1;
@@ -38,6 +37,7 @@ body {
     color: #FFF;
     text-align: center;
     font-size: 1.7rem;
+    font-family: var(--body-font);
 }
 .container .content {
     margin: 35px 0;
@@ -113,6 +113,7 @@ body {
     background: #2b0db1;
     color: #FFF;
     transition: all .5s ease;
+    font-family: var(--body-font);
 }
 .quote__buttons .prev__button {
     background: #FFF;
