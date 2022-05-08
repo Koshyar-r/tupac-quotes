@@ -2,25 +2,28 @@ const QuoteText = document.querySelector(".quote")
 const NextButton = document.querySelector(".next__button")
 const PreviousButton = document.querySelector(".prev__button")
 const CopyButton = document.querySelector(".copy")
-const ShareButton = document.querySelector(".twitter")
+const ShareButton = document.querySelector(".instagram")
 
 let QuoteCount = 0
 
 NextButton.onclick = () => {
-    QuoteCount++
-    ShowQuotes(QuoteCount)
+    if(QuoteCount == 60) {
+        QuoteCount = 0
+        ShowQuotes(QuoteCount)
+    } else {
+        QuoteCount++
+        ShowQuotes(QuoteCount)
+    }
 }
 
 PreviousButton.onclick = () => {
-    QuoteCount--
-    ShowQuotes(QuoteCount)
-}
-
-if(QuoteCount == 60) {
-    QuoteCount = 1
-    ShowQuotes(QuoteCount)
-} else {
-    ShowQuotes(QuoteCount)
+    if(QuoteCount == 0) {
+        QuoteCount = 60
+        ShowQuotes(QuoteCount)
+    } else {
+        QuoteCount--
+        ShowQuotes(QuoteCount)
+    }
 }
 
 function ShowQuotes(index) {
@@ -33,6 +36,6 @@ CopyButton.addEventListener("click", () => {
 })
 
 ShareButton.addEventListener("click", () => {
-    let tweetUrl = `https://twitter.com/intent/tweet?url=${QuoteText.innerText}`;
-    window.open(tweetUrl, "_blank");
+    let InstaUrl = `https://instagram.com/intent/tweet?url=${QuoteText.innerText}`
+    window.open(InstaUrl, "_blank")
 })
