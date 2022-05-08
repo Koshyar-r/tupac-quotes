@@ -114,6 +114,7 @@ body {
     color: #FFF;
     transition: all .5s ease;
     font-family: var(--body-font);
+    user-select: none;
 }
 .quote__buttons .prev__button {
     background: #FFF;
