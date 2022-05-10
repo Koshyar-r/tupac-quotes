@@ -6,23 +6,25 @@ const ShareButton = document.querySelector(".instagram")
 
 let QuoteCount = 0
 
+PreviousButton.style.display = "none"
+
 NextButton.onclick = () => {
-    if(QuoteCount == 60) {
-        QuoteCount = 0
-        ShowQuotes(QuoteCount)
-    } else {
-        QuoteCount++
-        ShowQuotes(QuoteCount)
+    QuoteCount++
+    ShowQuotes(QuoteCount)
+    PreviousButton.style.display = "inline"
+
+    if(QuoteCount == 58) {
+        NextButton.style.display = "none"
     }
 }
 
 PreviousButton.onclick = () => {
+    QuoteCount--
+    ShowQuotes(QuoteCount)
+    NextButton.style.display = "inline"
+
     if(QuoteCount == 0) {
-        QuoteCount = 60
-        ShowQuotes(QuoteCount)
-    } else {
-        QuoteCount--
-        ShowQuotes(QuoteCount)
+        PreviousButton.style.display = "none"
     }
 }
 
