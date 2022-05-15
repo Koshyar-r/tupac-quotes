@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 body {
-    background-image: url(/assets/images/pic.jpg);
+    background-image: url(pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -134,7 +134,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 480px) {
     body {
-        background-position: right;
+        background-position: right center;
         background-size: cover;
         background-repeat: no-repeat;
     }
