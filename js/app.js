@@ -38,6 +38,6 @@ CopyButton.addEventListener("click", () => {
 })
 
 ShareButton.addEventListener("click", () => {
-    let InstaUrl = `https://instagram.com/intent/tweet?url=${QuoteText.innerText}`
-    window.open(InstaUrl, "_blank")
+    let TweetUrl = `https://twitter.com/intent/tweet?url=${QuoteText.innerText}`
+    window.open(TweetUrl, "_blank")
 })

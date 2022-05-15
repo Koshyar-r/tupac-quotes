@@ -92,7 +92,7 @@ body {
     background: #2b0db1;
     color: #FFF;
     list-style: none;
-    border-radius: 50%;
+    border-radius: 5px;
     border: 2px solid #FFF;
     transition: all .3s ease;
 }
@@ -131,4 +131,45 @@ body {
 .quote__buttons .next__button:hover {
     background: #FFF;
     color: #2b0db1;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container header {
+        font-size: 1.4rem;
+    }
+    .quote__content .quote {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .content .author {
+        justify-content: center;
+    }
+    .container .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .buttons button {
+        font-size: .700rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
 }
