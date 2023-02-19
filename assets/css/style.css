@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 :root {
     --body-font: 'Poppins', sans-serif;
     --quote-font: 'Kalam', cursive;
-    --quote-author-font: 'Alex Brush', cursive; 
+    --quote-author-font: 'Alex Brush', cursive;
 }
 * {
     margin: 0;
@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 body {
-    background-image: url(pic.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.466)), url(pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,6 +37,7 @@ body {
     color: #FFF;
     text-align: center;
     font-size: 1.7rem;
+    font-weight: 500;
     font-family: var(--body-font);
 }
 .container .content {
@@ -72,105 +73,80 @@ body {
     margin: 20px 0;
 }
 .buttons .features {
-    display: flex;
     margin-top: 20px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.features ul {
-    display: flex;
-}
-.features ul li {
-    font-size: 20px;
-    margin: 0 5px;
-    height: 45px;
-    width: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background: #2b0db1;
-    color: #FFF;
-    list-style: none;
-    border-radius: 5px;
-    border: 2px solid #FFF;
-    transition: all .3s ease;
-}
-.features ul li:hover {
-    background: #FFF;
-    color: #2b0db1;
-    border: 2px solid #2b0db1;
-}
-.features ul li:first-child {
-    margin-left: 0;
-}
 .buttons button {
+    position: relative;
+    background-color: rgb(41, 7, 165);
+    color: #FFF;
+    padding: 12px 36px;
+    border-radius: 40px;
+    font-size: 1rem;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 13px 22px;
-    border-radius: 5px;
-    background: #2b0db1;
-    color: #FFF;
     transition: all .5s ease;
     font-family: var(--body-font);
     user-select: none;
+    --border-size: 2px;
 }
-.quote__buttons .prev__button {
-    background: #FFF;
-    color: #2b0db1;
+.buttons button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 40px;
+    border: var(--border-size) solid rgb(41, 7, 165);
+    transition: top, bottom, right, left, 100ms ease-in-out;
 }
-.quote__buttons .prev__button:hover {
-    background: #2b0db1;
-    color: #FFF;
+.buttons button:hover::before {
+    top: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
 }
-.quote__buttons .next__button {
-    background: #2b0db1;
-    color: #FFF;
+.buttons .copy.active:focus::before {
+    top: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
 }
-.quote__buttons .next__button:hover {
-    background: #FFF;
-    color: #2b0db1;
-}
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 940px) {
     body {
-        background: url(mobile-pic.jpg);
-        background-position: center;
+        background-position: right;
         background-size: cover;
         background-repeat: no-repeat;
     }
     .container {
+        width: 70vw;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .container header {
-        font-size: 1.4rem;
+        font-size: 4.2vw;
     }
     .quote__content .quote {
-        font-size: 1.3rem;
+        font-size: 3.6vw;
         text-align: center;
-        margin-right: 5rem;
-        margin-left: 5rem;
     }
     .content .author {
         justify-content: center;
     }
-    .container .buttons {
-        display: flex;
+    .buttons .features {
         justify-content: center;
+        flex-wrap: wrap-reverse;
+        column-gap: 8rem;
+        row-gap: 1rem;
     }
     .buttons button {
-        font-size: .700rem;
+        font-size: .870rem;
     }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-    
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-    
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000" />
-    <link rel="icon" href="assets/images/fav.png">
+    <link rel="icon" href="assets/images/icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/170a4ca11c.js"></script>
     <title>Tupac Quotes Generator</title>
@@ -22,20 +22,27 @@
             </div>
             <div class="buttons">
                 <div class="features">
-                    <ul>
-                    <li class="copy"><i class="fas fa-copy"></i></li>
-                    <li class="instagram"><i class="fab fa-twitter"></i></li>
-                    </ul>
-                    <div class="quote__buttons">
-                        <button class="prev__button">Previous Quote</button>
-                        <button class="next__button">Next Quote</button>
-                    </div>
+                    <button class="copy">Copy</button>
+                    <button class="quote__button">Get a Quote</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/app.js"></script>
-    <script src="js/quotes.js"></script>
-    <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="koshyar201A" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/quotes.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script>
+        const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        // reset: true
+    })
+
+    sr.reveal(`.container header`, {delay: 500})
+    sr.reveal(`.container .content`, {delay: 700, distance: '80px'})
+    </script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="koshyar201A" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
